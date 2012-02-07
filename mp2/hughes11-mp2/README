@@ -1,0 +1,33 @@
+TO COMPILE:
+make
+
+TO RUN:
+./mp2
+
+STEERING:
+W - pitch up
+A - roll left
+S - pitch down
+D - roll right
+space - speed up
+C - speed down
+
+OTHER:
++ - ocean level up
+- - ocean level down
+/ - day/night speed up
+* - day/night speed down  (note: this can go negative and reverse day/night)
+
+Press escape to exit.
+
+
+
+Source code Included:
+mp2.cpp - Contains the main glut and opengl calls used make the window.  This also moves the sun and moon
+	vertices and light sources.
+
+plane.cpp - Contains code used to move, roll, and pitch the camera.
+
+mountain.cpp - Contains code used to draw the mountain and the water, and raise the water level.
+
+vector.h - Contains a struct for a 3D float vector.

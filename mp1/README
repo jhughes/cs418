@@ -1,0 +1,16 @@
+TO COMPILE:
+make
+
+TO RUN:
+./mp1
+
+WIREFRAME MODE:
+right click to toggle wireframe mode.  (and see that there are no T junctions)
+
+Source code Included:
+mp1.cpp - Contains the main glut and opengl calls used make the window and
+	draw the image.
+I.cpp - Contains all the vertices and edges of the I and the functions
+	used to color and draw it.
+heart.cpp - Contains all the vertices of the heart, and the function
+	to color and draw it.

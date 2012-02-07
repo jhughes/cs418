@@ -1,0 +1,60 @@
+CS418 MP3 hughes11
+--------------------------------------------------------------------------------------------------------------------
+To make:
+	make
+To run:
+	./mp3
+
+Note:  This was developed and works fine on a remote connection to EWS.  This code doesn't seem to compile or run on the actual EWS machines.
+	I believe that the newer versions of OpenGL found on the physical EWS machines does not support the way I blend textures together. For this reason please test
+	on a remote EWS connection or older version of OpenGL if possible.
+
+--------------------------------------------------------------------------------------------------------------------
+
+KEYBOARD CONTROLS:
+
+W,A,S,D - rotate teapot on different axis
+
+arrow keys
+^ < v > - rotate light on different axis
+
+--------------------------------------------------------------------------------------------------------------------
+
+CODE FILES:
+	mp3.cpp - handles keyboard, lighting, and opengl initialization
+	cube.cpp - code for creating textures for skybox and cubemaps and drawing the skybox.
+	teapot.cpp - code for creating texture for teapot; creating teapot faces and vertices with normals; and drawing teapot.
+	helpers.cpp - helper functions used for calculating vertex normals and loading raw image files.
+	structures.h - structs used in calculating teapot vertex normals
+
+	list.cpp - Obj Loader file from http://www.kixor.net/dev/objloader/
+	objLoader.cpp - Obj Loader file from http://www.kixor.net/dev/objloader/
+	obj_parser.cpp - Obj Loader file from http://www.kixor.net/dev/objloader/
+	string_extra.cpp - Obj Loader file from http://www.kixor.net/dev/objloader/
+	
+OTHER FILES:
+	image.png - a screenshot of the teapot
+	cube_maps/ - raw image files used for cubemaps and skybox
+	textures/ - raw image files used for texturing the teapot
+
+--------------------------------------------------------------------------------------------------------------------
+
+CODE USED:
+
+Skybox tutorial:
+	http://sidvind.com/wiki/Skybox_tutorial
+Obj Loader:
+	http://www.kixor.net/dev/objloader/
+Texture Combiners:
+	http://74.54.224.213/wiki/Texture_Combiners
+
+--------------------------------------------------------------------------------------------------------------------
+
+IMAGES USED:
+
+Texture:
+	http://www.freeseamlesstextures.com/texture_downloads/large/1024x1024_seamless_texture_02.htm
+Cubemap/skybox
+	by Hipshot at www.zfight.com
+
+Images were modified in photoshop to allow for easier image loading.
